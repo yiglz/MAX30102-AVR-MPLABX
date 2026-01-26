@@ -1,0 +1,17 @@
+build/
+dist/
+nbproject/private/
+nbproject/Makefile-*
+nbproject/Package-*
+*.o
+*.p1
+*.d
+*.pre
+*.sym
+*.cmf
+*.hex
+*.elf
+*.map
+*.lst
+.DS_Store
+Thumbs.db
