@@ -47,7 +47,7 @@ int main() {
      * ------------------------------------------------------------------------- */
 
 
-    MAX30102_Config.Mode_Select = HR_AND_SPO2_MODE;
+    MAX30102_Config.Mode_Select = SPO2_MODE;
     /* -------------------------------------------------------------------------
      * REFERENCE TABLE: Mode Configuration
      * DEFINITION       | DESCRIPTION
