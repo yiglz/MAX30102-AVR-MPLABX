@@ -1,4 +1,3 @@
-
 #include "max30102.h"
 
 // -----------------------------------------------------------------------------
@@ -89,6 +88,10 @@ void MAX30102_FIFORead(uint32_t* RedData, uint32_t* IRData) {
     // Buffer Wrap-Around
     if(NUM_AVAILABLE_SAMPLES < 0) {
         NUM_SAMPLES_TO_READ = NUM_AVAILABLE_SAMPLES + 32;
+    }
+
+    if (NUM_SAMPLES_TO_READ == 0) {
+        return;
     }
     
     I2C_Start();
