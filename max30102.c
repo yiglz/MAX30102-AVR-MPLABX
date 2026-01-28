@@ -1,4 +1,11 @@
 #include "max30102.h"
+#include <avr/fuse.h>
+
+FUSES = {
+    .low = 0xFF,
+    .high = 0xD9,
+    .extended = 0xFF,
+};
 
 // -----------------------------------------------------------------------------
 //  MAX30102 WRITE FUNCTION
@@ -135,3 +142,4 @@ void MAX30102_FIFORead(uint32_t* RedData, uint32_t* IRData) {
     I2C_Write(WR_PTR_LOCATION);
     I2C_Stop();
 }
+
