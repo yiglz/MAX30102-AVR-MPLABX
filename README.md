@@ -1,4 +1,4 @@
-# MAX30102-AVR-MPLABX
+# MAX30102-ATMEGA328P-DRIVER
 Bare-metal C driver for MAX30102 on ATmega328P. Developed in MPLAB X IDE with XC8 compiler. Features a custom, I2C driver and table-based documentation for configuration.
 
 Warning: This driver is pre-configured for an 8 MHz clock frequency. If your hardware uses a different oscillator (e.g. 16 MHz on an Arduino Uno) you must update the following:
